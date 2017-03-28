@@ -10,28 +10,32 @@
 	</head>
 	<body onload="init()">
 		
-		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Hello World!</h1>
+			<h1>Business card</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>Hi, I'm your mobile device</p>
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Let me introduce myself!</a>
+			<p>Jakub Krekora</p>
+			<p>jakub_krekora@wp.pl</p>
+			<p>Informatyka stosowana</p>
+			<a href="#page2" class="ui-btn">Interests</a>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
-			<h1>(c) John Brown</h1>
+			<h1>(c) JK</h1>
 		  </div> 
 		</div> 
 		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>It's me</h1>
-			</div>
-			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for device details ...</p>
-			</div>
+		<div data-role="page" id="page2">
+			<div data-role="header">
+			<h1>My interests</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			<p>Interesuję się informatyką. Szczególną uwagę skupiam na bogatych aplikacjach internetowych</p>
+			<a href="#pageone" class="ui-btn">Back</a>
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) JK</h1>
+		  </div>
 		</div>		
 		
 	</body>
